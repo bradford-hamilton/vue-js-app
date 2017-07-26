@@ -1,18 +1,19 @@
 <template>
   <div class="hello">
     <h1>{{ message }}</h1>
-    <button v-on:click="eventHandler">Check out this sweet page now</button>
+    <router-link to="/foo">Check out this sweet page now</router-link>
+    <!-- <button v-on:click="eventHandler">Check out this sweet page now</button> -->
   </div>
 </template>
 
 <script>
 export default {
   name: 'hello',
-  methods: {
-    eventHandler() {
-      this.$route.router.go('/sweet-page');
-    },
-  },
+  // methods: {
+  //   eventHandler() {
+  //     this.$route.router.go('/sweet-page');
+  //   },
+  // },
   data() {
     return {
       message: 'Vue.js is pretty cool I guess',
